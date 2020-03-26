@@ -13,7 +13,9 @@
 <h1 style="color:red"><a href="FirstSimpleProgram">Hello Java!</a></h1><hr>
 
 <a href="ch01/queryLottery.jsp">問明牌</a><br>
-<a href="ch01/queryLottery2.jsp">問明牌2</a>
+<a href="ch01/queryLottery2.jsp">問明牌2</a><br>
+<a href="ch02/refreshTest.jsp">網頁般家了</a><br>
+<a href="ch02/insertMemberForm.jsp">新增會員資料</a>
 
 </body>
 </html>
