@@ -18,7 +18,12 @@ public class ProcessMemberServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		//設定輸入資料的編碼
+		request.setCharacterEncoding("UTF-8");
+		//讀取使用者輸入的資料
+		String id = request.getParameter("mId");
+		String password = request.getParameter("pswd");
+		
 	}
 
 }
