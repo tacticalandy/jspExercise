@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1 style="color:red"><a href="FirstSimpleProgram">Hello Java!</a></h1><hr>
+<h1 style="color:red"><!-- <a href="FirstSimpleProgram"> -->Hello Java!<!-- </a> --></h1><hr>
 
 <a href="ch01/queryLottery.jsp">問明牌</a><br>
 <a href="ch01/queryLottery2.jsp">問明牌2</a><br>
