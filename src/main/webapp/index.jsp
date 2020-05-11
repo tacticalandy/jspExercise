@@ -15,7 +15,9 @@
 <a href="ch01/queryLottery.jsp">問明牌</a><br>
 <a href="ch01/queryLottery2.jsp">問明牌2</a><br>
 <a href="ch02/refreshTest.jsp">網頁般家了</a><br>
-<a href="ch02/insertMemberForm.jsp">新增會員資料</a>
+<a href="ch02/insertMemberForm.jsp">新增會員資料</a><br>
+<a href="ch04_01/insertMemberForm.jsp">新增會員資料(MVC File IO)</a><br>
+<a href="ch04_02/insertMemberForm.jsp">新增會員資料(MVC Dao)</a>
 
 </body>
 </html>

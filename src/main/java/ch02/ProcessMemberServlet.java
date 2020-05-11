@@ -2,6 +2,7 @@ package ch02;
 
 import java.io.IOException;
 import java.sql.Timestamp;
+import java.util.Collection;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
