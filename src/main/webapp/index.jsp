@@ -17,7 +17,8 @@
 <a href="ch02/refreshTest.jsp">網頁般家了</a><br>
 <a href="ch02/insertMemberForm.jsp">新增會員資料</a><br>
 <a href="ch04_01/insertMemberForm.jsp">新增會員資料(MVC File IO)</a><br>
-<a href="ch04_02/insertMemberForm.jsp">新增會員資料(MVC Dao)</a>
+<a href="ch04_02/insertMemberForm.jsp">新增會員資料(MVC Dao)</a><br>
+<a href="ch05_01/ProduceDataServlet">顯示ch05_01.ProduceDataServlet所產生的資料</a>
 
 </body>
 </html>
