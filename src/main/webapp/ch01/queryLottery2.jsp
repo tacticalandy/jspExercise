@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>查詢明牌2</title>
+<title>查詢明牌2Lab01</title>
 </head>
 <body>
-<h2>查詢明牌2</h2>
+<h2>查詢明牌2Lab01</h2>
 <form action="LotteryServlet2" method="POST">
 	訪客姓名： <input type="text" name="visitor" size="10"><p>
 			<input type="radio" name="numberType" value="BIG" checked="">大樂透(六個介於1-49的數字) <br>

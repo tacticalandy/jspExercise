@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>發明牌</title>
+<title>發明牌Lab01</title>
 </head>
 <body>
 <h2>求籤</h2>

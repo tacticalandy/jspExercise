@@ -18,7 +18,11 @@
 <a href="ch02/insertMemberForm.jsp">新增會員資料</a><br>
 <a href="ch04_01/insertMemberForm.jsp">新增會員資料(MVC File IO)</a><br>
 <a href="ch04_02/insertMemberForm.jsp">新增會員資料(MVC Dao)</a><br>
-<a href="ch05_01/ProduceDataServlet">顯示ch05_01.ProduceDataServlet所產生的資料</a>
+<a href="ch05_01/ProduceDataServlet">顯示ch05_01.ProduceDataServlet所產生的資料</a><br>
+<a href="ch05_02/InputData.jsp">在JSP網頁中，使用EL可以讀取表單資料</a><br>
+<a href="ch05_03/insertMemberForm.jsp">新增會員資料(錯誤訊息顯示)</a><br>
+<a href="ch05_04/queryLottery.jsp">問明牌(由jsp設定bean)</a><br>
+<a href="ch05_05/queryLottery.jsp">問明牌(由jstl設定bean)</a><br>
 
 </body>
 </html>
