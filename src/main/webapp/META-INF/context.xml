@@ -4,7 +4,7 @@
 
 	<!-- MySQL(範例程式會用到的DataSource) -->
 	<Resource name="jdbc/MemberDataBaseM" type="javax.sql.DataSource" 
-		username="root" password="tact14455147andy"
+		username="root" password="Do!ng123"
 		driverClassName="com.mysql.cj.jdbc.Driver"
 		url="jdbc:mysql:///jspdb"
 		connectionProperties=
