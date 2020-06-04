@@ -16,7 +16,7 @@
 		
 <!--     SQL Server(範例程式會用到的DataSource) -->
 <!-- 	<Resource name="jdbc/MemberDataBaseS" type="javax.sql.DataSource"  -->
-<!-- 	 	username="root" password="tact14455147Andy" -->
+<!-- 	 	username="root" password="Do!ng123" -->
 <!--       	driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" -->
 <!--       	url="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=JSPDB" -->
 <!--       	maxTotal="8" -->
