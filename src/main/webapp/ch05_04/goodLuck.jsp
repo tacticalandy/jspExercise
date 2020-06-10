@@ -18,5 +18,6 @@
 	<h2>求籤</h2>
 	${param.visitor}，您好，<br>
 	 您的明牌為： <jsp:getProperty property="luckyNumbers" name="myBean"/><br>
+	 <br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

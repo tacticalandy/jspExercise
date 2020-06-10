@@ -8,5 +8,6 @@
 </head>
 <body> 
 <h1>會員資料新增失敗</h1>
+<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

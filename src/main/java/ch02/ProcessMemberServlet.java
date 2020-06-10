@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class ProcessMemberServlet
@@ -52,7 +53,7 @@ public class ProcessMemberServlet extends HttpServlet {
 		} catch (NullPointerException e) {
 			e.printStackTrace();
 		}
-
+		HttpSession session = request.getSession();
 		//封裝輸入的資料
 		MemberBean mb =
 				new MemberBean(id, name, password, address, phone, date, ts, dWeight);
@@ -60,10 +61,15 @@ public class ProcessMemberServlet extends HttpServlet {
 		try {
 			MemberFileIO mfio = new MemberFileIO("c:\\JSP\\data\\member.dat");
 			mfio.insertMember(mb);
-			request.setAttribute("memberBean", mb);
-			RequestDispatcher rd =
-					request.getRequestDispatcher("/ch02/InsertMemberSuccess.jsp");
-			rd.forward(request, response);
+//			request.setAttribute("memberBean", mb);
+//			RequestDispatcher rd = request.getRequestDispatcher("/ch04_01/InsertMemberSuccess.jsp");
+//			rd.forward(request, response);
+			// 用forward轉址的缺點在於轉移是在服務器內運作，使用者的瀏覽器網址不會更改
+			// 當使用者按下重新整理(F5)時會導致重新傳送請求，造成二次insertMember
+			// 然後因為沒有用forward移交資料給InsertMemberSuccess.jsp
+			// 要另外用session來儲存需要顯示的訊息
+			session.setAttribute("memberBean", mb);
+			response.sendRedirect("InsertMemberSuccess.jsp");
 			return;
 		} catch (IOException e) {
 			RequestDispatcher rd =

@@ -84,6 +84,6 @@ form {
 		</table>
 		<div style="color: #FF0000; font-size: 60%; display: inline">${ErrorMsg.exception}</div>
 	</form>
-
+<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

@@ -10,5 +10,6 @@
 <h2>求籤</h2>
 ${visitName}，您好，<br>
 您的明牌為： ${luckyNumber}
+<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

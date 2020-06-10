@@ -18,5 +18,6 @@
 您輸入的資料有：<BR>
 姓名：${param.customerName}<BR>
 地址：${param.address}<BR>
+<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

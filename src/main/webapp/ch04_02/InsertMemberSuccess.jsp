@@ -13,5 +13,6 @@
 生日: ${ memberBean.birthday }<br>
 註冊時間: ${ memberBean.registerDate }<br>
 體重: ${ memberBean.weight }<br>
+<a href="../index.jsp">回首頁</a>
 </body>
 </html>

@@ -93,8 +93,11 @@ public class ProcessMemberServlet extends HttpServlet {
 			mfio.insertMember(mb);
 			request.setAttribute("memberBean", mb);
 			// 依照執行的結果挑選適當的view元件，送回相關訊息
-			RequestDispatcher rd = request.getRequestDispatcher("/ch04_01/InsertMemberSuccess.jsp");
-			rd.forward(request, response);
+//			RequestDispatcher rd = request.getRequestDispatcher("/ch04_01/InsertMemberSuccess.jsp");
+//			rd.forward(request, response);
+			// 用forward轉址的缺點在於轉移是在服務器內運作，使用者的瀏覽器網址不會更改
+			// 當使用者按下重新整理(F5)時會導致重新傳送請求，造成二次insertMember
+			response.sendRedirect("InsertMemberSuccess.jsp");
 			return;
 		} catch (IOException e) {
 			errorMessage.add("IO錯誤:" + e.getMessage());

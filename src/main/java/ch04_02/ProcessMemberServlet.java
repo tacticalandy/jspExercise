@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class ProcessMemberServlet
@@ -85,17 +86,23 @@ public class ProcessMemberServlet extends HttpServlet {
 			rd.forward(request, response);
 			return;
 		}
-
+		HttpSession session = request.getSession();
 		// 封裝輸入的資料
 		MemberBean mb = new MemberBean(id, name, password, address, phone, date, ts, dWeight);
 		// 把資料寫出並跳轉頁面
 		try {
 			MemberService service = new MemberService();
 			service.insertMember(mb);
-			request.setAttribute("memberBean", mb);
+//			request.setAttribute("memberBean", mb);
 			// 依照執行的結果挑選適當的view元件，送回相關訊息
-			RequestDispatcher rd = request.getRequestDispatcher("/ch04_02/InsertMemberSuccess.jsp");
-			rd.forward(request, response);
+//			RequestDispatcher rd = request.getRequestDispatcher("/ch04_02/InsertMemberSuccess.jsp");
+//			rd.forward(request, response);
+			// 用forward轉址的缺點在於轉移是在服務器內運作，使用者的瀏覽器網址不會更改
+			// 當使用者按下重新整理(F5)時會導致重新傳送請求，造成二次insertMember
+			// 然後因為沒有用forward移交資料給InsertMemberSuccess.jsp
+			// 要另外用session來儲存需要顯示的訊息
+			session.setAttribute("memberBean", mb);
+			response.sendRedirect("InsertMemberSuccess.jsp");
 			return;
 		} catch (SQLException e) {
 			if (e.getMessage().indexOf("重複的索引鍵") != -1 || e.getMessage().indexOf("Duplicate entry") != -1) {

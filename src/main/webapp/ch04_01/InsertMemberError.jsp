@@ -21,5 +21,6 @@
 			</ul>
 		</font>
 	</c:if>
+	<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

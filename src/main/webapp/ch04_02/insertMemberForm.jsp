@@ -70,6 +70,6 @@ form {
 			</tbody>
 		</table>
 	</form>
-
+<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

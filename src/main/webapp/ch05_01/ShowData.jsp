@@ -35,5 +35,6 @@ Map物件的第二對資料的Key為key002<BR>
 產品價格: ${MapKey.key002.price}<BR>
 產品重量: ${MapKey.key002.weight}<BR>
 <P>
+<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

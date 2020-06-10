@@ -24,5 +24,6 @@
 	，您好，
 	<br> 您的明牌為：${myBean.luckyNumbers}
 	<br>
+	<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

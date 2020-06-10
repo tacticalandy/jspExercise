@@ -16,5 +16,6 @@
 			<input type="radio" name="numberType" value="FOURSTARS">四星彩(四個可重複，介於0-9的數字) <br>
 			<input type="submit" value="確定"><p>
 </form>
+<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>

@@ -13,6 +13,6 @@
 地址:<INPUT type="text" name="address" size ='20' /><BR><P/>
 <INPUT type="submit" value="提交"/> <BR>
 </FORM>
-
+<br><a href="../index.jsp">回首頁</a>
 </body>
 </html>
